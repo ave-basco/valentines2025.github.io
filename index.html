@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+
+	<style>
+	
+		.button {
+			position: absolute;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+			height: 60px;
+			width: 125px;
+		}
+
+		.button1 {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #04AA6D;
+			margin-left: -125px;
+		}
+		
+		.button1:hover {
+			background-color: #04AA6D;
+			color: white;
+		}
+		
+		.button2 {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #f44336;
+
+		}
+		
+		.button2:hover {
+			background-color: #f44336;
+			color: white;
+		}
+		
+		.buttonrandom {
+			background-color: white; 
+			color: black;
+		}
+		
+		.buttonrandom:hover {
+			transform: scale(1.5); 
+		}
+		
+		.abscbnbutton {
+            padding: 4px 5px;
+            font-size: 20px;
+			color: white; 
+			border: 2px solid #808080;
+			margin-left: -125px;
+			transition: transform 5s;
+		}
+		
+		.ibmbutton {
+            padding: 2px 15px;
+            font-size: 35px;
+			color: #006699; 
+			border: 2px solid #808080;
+			transition: transform 2s;
+		}
+
+		.abscbnbutton:hover {
+			transform: scale(1.5); 
+		}
+
+		.ibmbutton:hover {
+			transform: scale(1.5); 
+		}
+
+		.pansydog {
+			color: black
+			background: url(/image/btn.png) no-repeat;
+			margin-left: -125px;
+		}
+		.daisydog {
+			color: black
+			background: url(/image/btn.png) no-repeat;
+		}
+		
+		.pansydog:hover {
+			transform: scalex(4); 
+		}
+		
+		.daisydog:hover {
+			transform: scaley(4); 
+		}
+		
+		.tsukidog {
+			color: black
+			background: url(/image/btn.png) no-repeat;
+		}
+		
+		
+		h1 {text-align: center;}
+		p {
+			text-align: center;
+		}
+		.initial {
+			visibility: hidden
+		}
+		.after {
+			display: none
+		}
+		div {text-align: center;}
+	</style>
+</head>
+<body>
+<button id="skip1">+1</button>
+<button id="skip5">+5</button>
+<button id="skip10">+10</button>
+<h1 style="text-align: left; font-size: 15px"> current:  <span id="count"></span> </body>
+
+	<h1>will u be my valentine?</h1>
+	<div>
+		<div style="display: inline-block;">
+			<p id="face" class="initial"> :< </p>
+			<p id="p" class="after"> plsh.... </p>
+			<p id="a" class="after"> ayaw mo na sakin </p>
+			<p id="n" class="after"> nacho </p>
+			<p id="s" class="after"> shO MEAN HUHU </p>
+			<p id="y" class="after"> you are shtill my baby tho hehe </p>
+			<p id="why" class="after"> WHY DID U STILL TRY TO PRESS NO GR </p>
+			<p id="why1" class="after"> okay ayaw mo na talaga sakin </p>
+			<p id="why2" class="after"> DI AKO PAPAYAG GR </p>
+			<p id="why3" class="after"> heh. i have removed the bO button. </p>
+			<p id="why4" class="after"> oh. </p>
+			<p id="why5" class="after"> i have removed bO(th) buttonsh... </p>
+			<p id="why6" class="after"> hehe owy </p>
+			<p id="why7" class="after"> i put them bacc :3 </p>
+			<p id="why8" class="after"> oh those onesh don't work... </p>
+			<p id="why9" class="after"> hmmm... </p>
+			<p id="why10" class="after"> how about these... </p>
+			<p id="why10.5" class="after"> hehe you should click one </p>
+			<p id="why11" class="after"> HMWOAH GREAT CHOICE! hehe ^^</p>
+			<p id="why12" class="after"> ....still wrong buttonks.... </p>
+			<p id="why13" class="after"> how abouttttt these </p>
+			<p id="dog1" class="after"> OH </p>
+			<p id="dog2" class="after"> these are juz baby dogs </p>
+			<p id="dog3" class="after"> cuuuuuuuuuuuuuuuteeeeeee! </p>
+			<p id="dog4" class="after"> shhhhhhhhhhh! </p>
+			<p id="dog5" class="after"> do you smell that?? </p>
+			<p id="dog6" class="after"> ***sniff*** </p>
+			<p id="dog7" class="after"> smells like... </p>
+			<p id="dog8" class="after"> pee... and.. </p>
+			<p id="dog9" class="after"> ugliness... </p>
+			<p id="dog10" class="after" style = "font-size: 30px"> OH NOOOOOOOOOOOOOOOOOO </p>
+			<p id="dog11" class="after" style = "font-size: 30px"> ITSH TSUKIIIIIIIII D: </p>
+		</div>
+	</div>
+	
+	<div>
+		<button class="button button1" id="Yes">Yes</button>
+		<button class="button button2" id="No">No</button>
+	</div>
+	
+	<div style = "display: none" id = "buttons1">
+		<button class="button buttonrandom" style = "margin-left: -125px;" id="rand1"></button>
+		<button class="button buttonrandom" id="rand2"></button>
+	</div>
+	
+	<div style = "display: none" id = "buttons2">
+		<button class="button abscbnbutton" id="abscbn">ABS-CBN</button>
+		<button class="button ibmbutton" id="ibm">IBM</button>
+	</div>
+	
+	<div style = "display: none" id = "buttons3">
+		<button class="button pansydog" id="babydog1">pansy</button>
+		<button class="button daisydog" id="babydog2">daisy</button>
+	</div>
+	
+	<div style = "display: none" id = "buttons4">
+		<button class="button pansydog" id="babydog1">pansy</button>
+		<button class="button daisydog" id="babydog2">daisy</button>
+	</div>
+	
+	<script>
+		const yes_button = document.getElementById('Yes');
+		const no_button = document.getElementById('No');
+		const skip1_button = document.getElementById('skip1');
+		const skip5_button = document.getElementById('skip5');
+		const skip10_button = document.getElementById('skip10');
+		var hovered_over_times = 0;
+		document.getElementById('count').innerHTML = hovered_over_times;
+		
+		function doggydogs() {
+			hovered_over_times = 16;
+			if (hovered_over_times === 16) {
+				document.getElementById('why12').style.display = 'block';
+				setTimeout(function() {
+					document.getElementById('why11').style.display = 'none';
+					document.getElementById('why12').style.display = 'none';
+					document.getElementById('why13').style.display = 'block';
+				},4500);
+				setTimeout(function() {
+					document.getElementById('why13').style.display = 'none';
+					document.getElementById('buttons3').style.display = 'block';
+					document.getElementById('dog1').style.display = 'block';
+				},7000);
+				setTimeout(function() {
+					document.getElementById('dog2').style.display = 'block';
+				},7500);
+				setTimeout(function() {
+					document.getElementById('dog3').style.display = 'block';
+				},8000);
+				setTimeout(function() {
+					document.getElementById('dog1').style.display = 'none';
+					document.getElementById('dog2').style.display = 'none';
+					document.getElementById('dog3').style.display = 'none';
+					setTimeout(function() {
+						document.getElementById('dog4').style.display = 'block';
+					},2000);
+					setTimeout(function() {
+						document.getElementById('dog5').style.display = 'block';
+					},4000);
+					setTimeout(function() {
+						document.getElementById('dog6').style.display = 'block';
+					},6000);
+					setTimeout(function() {
+						document.getElementById('dog4').style.display = 'none';
+						document.getElementById('dog5').style.display = 'none';
+						document.getElementById('dog6').style.display = 'none';
+						document.getElementById('dog7').style.display = 'block';
+					},8000);
+					setTimeout(function() {
+						document.getElementById('dog8').style.display = 'block';
+					},10000);
+					setTimeout(function() {
+						document.getElementById('dog9').style.display = 'block';
+					},11000);
+					setTimeout(function() {
+						document.getElementById('dog7').style.display = 'none';
+						document.getElementById('dog8').style.display = 'none';
+						document.getElementById('dog9').style.display = 'none';
+						document.getElementById('buttons3').style.display = 'none';
+						document.getElementById('dog10').style.display = 'block';
+						document.getElementById('dog11').style.display = 'block';
+					},14000);
+				},15000);
+			}
+		}
+		
+		
+		
+		
+		no_button.addEventListener('mouseover', function () {
+			hovered_over_times += 1;
+			document.getElementById('count').innerHTML = hovered_over_times;
+			if (hovered_over_times === 3) {
+					face.style.visibility = 'visible';
+				}
+			if (hovered_over_times > 2) {
+				if (hovered_over_times === 4) {
+					yes_button.style.transform = 'scale(1)';
+					document.getElementById('p').style.display = 'block';
+				}
+				if (hovered_over_times > 4) {
+					yes_button.style.transform = `scale(${Math.pow(1.09, hovered_over_times - 4)})`;
+				}
+				if (hovered_over_times === 6) {
+					document.getElementById('a').style.display = 'block';
+				}
+				if (hovered_over_times === 8) {
+					document.getElementById('n').style.display = 'block';
+				}
+				if (hovered_over_times === 9) {
+					document.getElementById('s').style.display = 'block';
+				}
+				if (hovered_over_times === 10) {
+					document.getElementById('y').style.display = 'block';
+				}
+				if (hovered_over_times === 11) {
+					alert('heh did u notice the acrostic');
+					document.getElementById('p').style.textAlign = 'left';
+					document.getElementById('a').style.textAlign = 'left';
+					document.getElementById('n').style.textAlign = 'left';
+					document.getElementById('s').style.textAlign = 'left';
+					document.getElementById('y').style.textAlign = 'left';
+				}
+				if (hovered_over_times === 12) {
+					document.getElementById('face').style.display = 'none';
+					document.getElementById('p').style.display = 'none';
+					document.getElementById('a').style.display = 'none';
+					document.getElementById('n').style.display = 'none';
+					document.getElementById('s').style.display = 'none';
+					document.getElementById('y').style.display = 'none';
+					document.getElementById('why').style.display = 'block';
+				}
+				if (hovered_over_times === 13) {
+					document.getElementById('why').style.display = 'none';
+					document.getElementById('why1').style.display = 'block';
+				}
+				
+				if (hovered_over_times === 14) {
+					document.getElementById('why1').style.display = 'none';
+					document.getElementById('why2').style.display = 'block';
+				}
+				
+				if (hovered_over_times === 15) {
+					document.getElementById('why2').style.display = 'none';
+					document.getElementById('why3').style.display = 'block';
+					yes_button.style.display = 'none';
+					no_button.style.display = 'none';
+					setTimeout(function() {
+						document.getElementById('why3').style.display = 'none';
+						document.getElementById('why4').style.display = 'block';
+						setTimeout(function() {
+							document.getElementById('why4').style.display = 'none';
+							document.getElementById('why5').style.display = 'block';
+						}, 2000);
+						setTimeout(function() {
+							document.getElementById('why5').style.display = 'none';
+							document.getElementById('why6').style.display = 'block';
+						}, 5000);
+						setTimeout(function() {
+							document.getElementById('why6').style.display = 'none';
+							document.getElementById('why7').style.display = 'block';
+							document.getElementById('rand1').style.border = '2px solid' + '#' + (Math.random()*0xFFFFFF<<0).toString(16); 
+							document.getElementById('rand2').style.border = '2px solid' + '#' + (Math.random()*0xFFFFFF<<0).toString(16); 
+							document.getElementById('buttons1').style.display = 'block';
+						}, 7000);
+						setTimeout(function() {
+							document.getElementById('why7').style.display = 'none';
+							document.getElementById('why8').style.display = 'block';
+							document.getElementById('why9').style.display = 'block';
+							document.getElementById('buttons1').style.display = 'none';
+						}, 15000);
+						setTimeout(function() {
+							document.getElementById('why8').style.display = 'none';
+							document.getElementById('why9').style.display = 'none';
+							document.getElementById('why10').style.display = 'block';
+							document.getElementById('abscbn').style.background = 'linear-gradient(to bottom right , #ec1c24 20%, #0d6e3d 40%, #0464b4)';
+							document.getElementById('ibm').style.background = 'repeating-linear-gradient(white 10%, #006699 20%)';
+							document.getElementById('buttons2').style.display = 'block';
+							setTimeout(function() {
+								document.getElementById('why10.5').style.display = 'block';
+							},2000);
+						}, 17500);
+					}, 3000);
+
+				}
+				
+				yes_button.style.left = no_button.style.left;
+				yes_button.style.top = no_button.style.top;
+				yes_button.style.marginLeft = 0;
+			}
+			no_button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+			no_button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+		});
+		
+		no_button.addEventListener('click', function () {
+			alert(":(");
+		})
+		skip1_button.addEventListener('click', function () {
+			hovered_over_times += 1;
+			document.getElementById('count').innerHTML = hovered_over_times;
+		})
+		skip5_button.addEventListener('click', function () {
+			hovered_over_times += 5;
+			document.getElementById('count').innerHTML = hovered_over_times;
+		})
+		skip10_button.addEventListener('click', function () {
+			hovered_over_times += 10;
+			document.getElementById('count').innerHTML = hovered_over_times;
+		})
+		
+		abscbn.addEventListener('click', function () {
+			document.getElementById('why11').style.display = 'block';
+			document.getElementById('why10').style.display = 'none';
+			document.getElementById('why10.5').style.display = 'none';
+			document.getElementById('buttons2').style.display = 'none';
+			setTimeout(function() {
+				doggydogs();
+			},2000);
+		})
+		
+		ibm.addEventListener('click', function () {
+			document.getElementById('why11').style.display = 'block';
+			document.getElementById('why10').style.display = 'none';
+			document.getElementById('why10.5').style.display = 'none';
+			document.getElementById('buttons2').style.display = 'none';
+			setTimeout(function() {
+				doggydogs();
+			},2000);
+		})
+	</script> 
+
+</body>
+</html>
