@@ -185,8 +185,7 @@
 	</div>
 	
 	<div style = "display: none" id = "buttons4">
-		<button class="button pansydog" id="babydog1">pansy</button>
-		<button class="button daisydog" id="babydog2">daisy</button>
+		<button class="button tsukidog" id="babydog3">tsuki</button>
 	</div>
 	
 	<script>
@@ -244,12 +243,16 @@
 						document.getElementById('dog9').style.display = 'block';
 					},11000);
 					setTimeout(function() {
+						
 						document.getElementById('dog7').style.display = 'none';
 						document.getElementById('dog8').style.display = 'none';
 						document.getElementById('dog9').style.display = 'none';
+						<!--
 						document.getElementById('buttons3').style.display = 'none';
+						-->
 						document.getElementById('dog10').style.display = 'block';
 						document.getElementById('dog11').style.display = 'block';
+						document.getElementById('buttons4').style.display = 'block';
 					},14000);
 				},15000);
 			}
