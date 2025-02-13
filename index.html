@@ -85,14 +85,14 @@
 
 		.pansydog {
 			color: black;
-			background-image: url("docs/assets/pansy.png");
+			background-image: url("imgs/pansy.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 			margin-left: -125px;
 		}
 		.daisydog {
 			color: black;
-			background-image: url("docs/assets/daisy.png");
+			background-image: url("imgs/daisy.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
@@ -107,7 +107,7 @@
 		
 		.tsukidog {
 			color: black
-			background-image: url("docs/assets/tsuki.png");
+			background-image: url("imgs/tsuki.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
@@ -214,8 +214,9 @@
 				},4500);
 				setTimeout(function() {
 					document.getElementById('why13').style.display = 'none';
-					document.getElementById('babydog1').style.background= "url('/docs/assets/pansy.jpg')";
-					document.getElementById('babydog2').style.background= "url(/docs/assets/daisy.jpg)";
+					document.getElementById('babydog1').style.backgroundImage = 'url("docs/assets/pansy.png")';
+					document.getElementById('babydog2').style.backgroundImage = 'url("docs/assets/daisy.png")';
+
 					document.getElementById('buttons3').style.display = 'block';
 					document.getElementById('dog1').style.display = 'block';
 				},7000);
@@ -257,6 +258,7 @@
 						document.getElementById('buttons3').style.display = 'none';
 						document.getElementById('dog10').style.display = 'block';
 						document.getElementById('dog11').style.display = 'block';
+						document.getElementById('babydog3').style.backgroundImage = 'url("docs/assets/tsuki.png")';
 						document.getElementById('buttons4').style.display = 'block';
 					},14000);
 				},15000);
