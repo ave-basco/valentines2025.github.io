@@ -9,6 +9,37 @@
 
 	<style>
 	
+		.btn {
+		  font-family: Arial, Helvetica, sans-serif;
+		  text-transform: uppercase;
+		} 
+		 
+		.btn:hover .btn-slide-show-text1 {
+		  margin-left: 65px;
+		} 
+		 
+		.btn-moving-gradient {
+		  height: 55px;
+		  width: 200px;
+		  font-size: 16px;
+		  font-weight: 600;
+		  color: rgb(255, 255, 255);
+		  cursor: pointer;
+		  border: medium;
+		  background-size: 300% 100%;
+		  border-radius: 50px;
+		} 
+		 
+		.btn-moving-gradient:hover {
+		  transition: 0.5s ease-in-out;
+		  background-position: 100% 0px;
+		} 
+		 
+		.btn-moving-gradient--orange {
+		  background-image: linear-gradient(90deg, rgb(255, 132, 0), rgb(255, 191, 0), rgb(255, 174, 0), rgb(251, 176, 59));
+		  box-shadow: rgb(204, 153, 0) 0px 4px 15px 0px;
+		} 
+	
 		.button {
 			position: absolute;
 			border: none;
@@ -19,7 +50,7 @@
 			display: inline-block;
 			font-size: 16px;
 			margin: 4px 2px;
-			transition-duration: 0.4s;
+			transition-duration: 0.2s;
 			cursor: pointer;
 			height: 60px;
 			width: 125px;
@@ -85,14 +116,14 @@
 
 		.pansydog {
 			color: black;
-			background-image: url("imgs/pansy.png");
+			background-image: url("docs/assets/pansy.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 			margin-left: -125px;
 		}
 		.daisydog {
 			color: black;
-			background-image: url("imgs/daisy.png");
+			background-image: url("docs/assets/daisy.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
@@ -107,11 +138,20 @@
 		
 		.tsukidog {
 			color: black
-			background-image: url("imgs/tsuki.png");
+			background-image: url("docs/assets/tsuki.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
+		.tsukidog:hover {
+			transform: scale(2) rotate(180deg);
+		}
 		
+		.pee {
+			color: black
+			background: yellow
+			border-radius: 50%;
+			transition-duration: 0.5s;
+		}
 		
 		h1 {text-align: center;}
 		p {
@@ -167,6 +207,14 @@
 			<p id="dog9" class="after"> ugliness... </p>
 			<p id="dog10" class="after" style = "font-size: 30px"> OH NOOOOOOOOOOOOOOOOOO </p>
 			<p id="dog11" class="after" style = "font-size: 30px"> ITSH TSUKIIIIIIIII D: </p>
+			<p id="dog12" class="after" style = "font-size: 20px"> HE ISH PEEING EVERYWHERE </p>
+			<p id="dog13" class="after" style = "font-size: 20px"> PLSH CATCH DDDD: </p>
+			<p id="dog14" class="after"> ty for capturing </p>
+			<p id="dog15" class="after"> plsh clean hish pee up </p>
+			<p id="dog16" class="after"> hehe ty for catchink good job  </p>
+			<p id="dog17" class="after"> okay buttons...  </p>
+			<p id="dog18" class="after"> okay buttons...  </p>
+			
 		</div>
 	</div>
 	
@@ -192,7 +240,15 @@
 	
 	<div style = "display: none" id = "buttons4">
 		<button class="button tsukidog" id="babydog3">tsuki</button>
+		<button class="button pee" id="pee1"></button>
+		<button class="button pee" id="pee2"></button>
+		<button class="button pee" id="pee3"></button>
+		<button class="button pee" id="pee4"></button>
 	</div>
+	
+	
+	<a style="text-decoration:none" href = "docs/assets/tsuki.png" download> <button type= "submit" class="btn btn-moving-gradient btn-moving-gradient--orange" style = "display: none;" id="scam"> Click Me for free Windows 14! </button> </a>
+		
 	
 	<script>
 		const yes_button = document.getElementById('Yes');
@@ -200,10 +256,18 @@
 		const skip1_button = document.getElementById('skip1');
 		const skip5_button = document.getElementById('skip5');
 		const skip10_button = document.getElementById('skip10');
+		const tsuki = document.getElementById('babydog3');
 		var hovered_over_times = 0;
+		var pee_collected = 0;
+		let a = document.getElementById('pee1');
+		let b = document.getElementById('pee2');
+		let c = document.getElementById('pee3');
+		let d = document.getElementById('pee4');
+		let pee_collection = [a,b,c,d];
 		document.getElementById('count').innerHTML = hovered_over_times;
 		
 		function doggydogs() {
+			hovered_over_tsuki = -1;
 			hovered_over_times = 16;
 			if (hovered_over_times === 16) {
 				document.getElementById('why12').style.display = 'block';
@@ -216,23 +280,23 @@
 					document.getElementById('why13').style.display = 'none';
 					document.getElementById('babydog1').style.backgroundImage = 'url("docs/assets/pansy.png")';
 					document.getElementById('babydog2').style.backgroundImage = 'url("docs/assets/daisy.png")';
+					document.getElementById('babydog1').style.backgroundSize = 'cover';
+					document.getElementById('babydog2').style.backgroundSize = 'cover';
 
 					document.getElementById('buttons3').style.display = 'block';
 					document.getElementById('dog1').style.display = 'block';
 				},7000);
 				setTimeout(function() {
 					document.getElementById('dog2').style.display = 'block';
-				},7500);
+				},8000);
 				setTimeout(function() {
 					document.getElementById('dog3').style.display = 'block';
-				},8000);
+				},9000);
 				setTimeout(function() {
 					document.getElementById('dog1').style.display = 'none';
 					document.getElementById('dog2').style.display = 'none';
 					document.getElementById('dog3').style.display = 'none';
-					setTimeout(function() {
-						document.getElementById('dog4').style.display = 'block';
-					},2000);
+					document.getElementById('dog4').style.display = 'block';
 					setTimeout(function() {
 						document.getElementById('dog5').style.display = 'block';
 					},4000);
@@ -258,10 +322,143 @@
 						document.getElementById('buttons3').style.display = 'none';
 						document.getElementById('dog10').style.display = 'block';
 						document.getElementById('dog11').style.display = 'block';
+						document.getElementById('babydog3').style.height = '';
+						document.getElementById('babydog3').style.width = '';
 						document.getElementById('babydog3').style.backgroundImage = 'url("docs/assets/tsuki.png")';
+						document.getElementById('pee1').style.display = 'none';
+						document.getElementById('pee2').style.display = 'none';
+						document.getElementById('pee3').style.display = 'none';
+						document.getElementById('pee4').style.display = 'none';
 						document.getElementById('buttons4').style.display = 'block';
 					},14000);
+					setTimeout(function() {
+						document.getElementById('dog10').style.display = 'none';
+						document.getElementById('dog11').style.display = 'none';
+						document.getElementById('dog12').style.display = 'block';
+						document.getElementById('dog13').style.display = 'block';
+					},17000);
 				},15000);
+								
+				
+				tsuki.addEventListener('mouseover', function () {
+					hovered_over_tsuki += 1;
+
+					if (hovered_over_tsuki > -1 && hovered_over_tsuki < 4) {
+						pee_collection[hovered_over_tsuki].style.borderRadius = '50%';
+						pee_collection[hovered_over_tsuki].style.display = 'inline-block';
+						pee_collection[hovered_over_tsuki].style.background = '#FFFF00';
+						pee_collection[hovered_over_tsuki].style.left = tsuki.style.left;
+						pee_collection[hovered_over_tsuki].style.top = tsuki.style.top;
+						tsuki.style.left = `${Math.ceil(Math.random() * 90)}%`;
+						tsuki.style.top = `${Math.ceil(Math.random() * 90)}%`;
+					}
+					
+				})
+				
+				tsuki.addEventListener('click', function () {
+					alert("ror hehe i peed already hehe");
+					tsuki.style.display = 'none';
+					document.getElementById('dog12').style.display = 'none';
+					document.getElementById('dog13').style.display = 'none';
+					document.getElementById('dog14').style.display = 'block';
+					document.getElementById('dog15').style.display = 'block';
+				})
+				
+				a.addEventListener('click', function () {
+					alert("hehe ty");
+					a.style.transform = 'scale(0)';
+					pee_collected += 1;
+					if(pee_collected === 4){
+						document.getElementById('dog14').style.display = 'none';
+						document.getElementById('dog15').style.display = 'none';
+						document.getElementById('dog16').style.display = 'block';
+						setTimeout(function() {
+							document.getElementById('dog16').style.display = 'none';
+							document.getElementById('dog17').style.display = 'block';
+						},2000);
+						setTimeout(function() {
+							document.getElementById('dog17').style.display = 'none';
+							document.getElementById('dog18').style.display = 'block';
+						},4000);
+						setTimeout(function() {
+							document.getElementById('dog18').style.display = 'none';
+							document.getElementById('scam').style.display = 'block';
+						},7000);
+					}
+				})
+
+				b.addEventListener('click', function () {
+					alert("sHLURRrrRRP!");
+					b.style.transform = 'scale(0)';
+					pee_collected += 1;
+					if(pee_collected === 4){
+						document.getElementById('dog14').style.display = 'none';
+						document.getElementById('dog15').style.display = 'none';
+						document.getElementById('dog16').style.display = 'block';
+						setTimeout(function() {
+							document.getElementById('dog16').style.display = 'none';
+							document.getElementById('dog17').style.display = 'block';
+						},2000);
+						setTimeout(function() {
+							document.getElementById('dog17').style.display = 'none';
+							document.getElementById('dog18').style.display = 'block';
+						},4000);
+						setTimeout(function() {
+							document.getElementById('dog18').style.display = 'none';
+							document.getElementById('scam').style.display = 'block';
+						},7000);
+					}
+				})
+				
+				c.addEventListener('click', function () {
+					alert("wiped!");
+					c.style.transform = 'scale(0)';
+					pee_collected += 1;
+					if(pee_collected === 4){
+						document.getElementById('dog14').style.display = 'none';
+						document.getElementById('dog15').style.display = 'none';
+						document.getElementById('dog16').style.display = 'block';
+						setTimeout(function() {
+							document.getElementById('dog16').style.display = 'none';
+							document.getElementById('dog17').style.display = 'block';
+						},2000);
+						setTimeout(function() {
+							document.getElementById('dog17').style.display = 'none';
+							document.getElementById('dog18').style.display = 'block';
+						},4000);
+						setTimeout(function() {
+							document.getElementById('dog18').style.display = 'none';
+							document.getElementById('scam').style.display = 'block';
+						},7000);
+					}
+				})
+				
+				d.addEventListener('click', function () {
+					alert("poof!");
+					d.style.transform = 'scale(0)';
+					pee_collected += 1;
+					if(pee_collected === 4){
+						document.getElementById('dog14').style.display = 'none';
+						document.getElementById('dog15').style.display = 'none';
+						document.getElementById('dog16').style.display = 'block';
+						setTimeout(function() {
+							document.getElementById('dog16').style.display = 'none';
+							document.getElementById('dog17').style.display = 'block';
+						},2000);
+						setTimeout(function() {
+							document.getElementById('dog17').style.display = 'none';
+							document.getElementById('dog18').style.display = 'block';
+						},4000);
+						setTimeout(function() {
+							document.getElementById('dog18').style.display = 'none';
+							document.getElementById('buttons5').style.display = 'block';
+						},7000);
+					}
+				})
+				
+				scam.addEventListener('click', function () {
+					alert('u hab virus owy');
+				})
 			}
 		}
 		
