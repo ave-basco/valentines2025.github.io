@@ -172,7 +172,7 @@
 <button id="skip10">+10</button>
 <h1 style="text-align: left; font-size: 15px"> current:  <span id="count"></span> </body>
 
-	<h1>will u be my valentine?</h1>
+	<h1 id = "question" >will u be my valentine?</h1>
 	<div>
 		<div style="display: inline-block;">
 			<p id="face" class="initial"> :< </p>
@@ -213,8 +213,55 @@
 			<p id="dog15" class="after"> plsh clean hish pee up </p>
 			<p id="dog16" class="after"> hehe ty for catchink good job  </p>
 			<p id="dog17" class="after"> okay buttons...  </p>
-			<p id="dog18" class="after"> okay buttons...  </p>
+			<p id="dog18" class="after"> lets see.....  </p>
+			<p id="virush1" class="after"> haha u clicked virus  </p>
+			<p id="virush2" class="after"> expected since shishu  </p>
+			<p id="virush3" class="after"> OH </p>
+			<p id="virush4" class="after"> i found it na  </p>
+			<p id="virush5" class="after"> hmmmm but it needs a...number...?  </p>
+			<p id="virush6" class="after"> hehe please enter nalang mahal  </p>
+			<p id="virush7" class="after"> Calculating  </p>
+			<p id="poem1" class="after">With your lovely dogs beside you,</p>
+			<p id="poem2" class="after">and the number you've chosen true</p>
+			<p id="poem3" class="after">Note the day:</p>
+			<p id="poem4" class="after">Valentines but... with +1 day delay. </p>
+			<p id="poem5" class="after">&nbsp;</p>
+			<p id="poem6" class="after">Here lies a poem</p>
+			<p id="poem7" class="after">to capture the stars,</p>
+			<p id="poem8" class="after">to ensnare the planets,</p>
+			<p id="poem9" class="after">to conquer the galaxies.</p>
+			<p id="poem10" class="after">All in hopes that with what I've written,</p>
+			<p id="poem11" class="after">you get struck and smitten.</p>
+			<p id="poem12" class="after">&nbsp;</p>
+			<p id="poem13" class="after">Fall for me,</p>
+			<p id="poem14" class="after">endlessly,</p>
+			<p id="poem15" class="after">unconditionally,</p>
+			<p id="poem16" class="after">relentlessly.</p>
+			<p id="poem17" class="after">As deeply as I already have for thee.</p>
+			<p id="poem18" class="after">&nbsp;</p>
+			<p id="poem19" class="after">With you, my heart is filled with symphonies.</p>
+			<p id="poem20" class="after">While my mind engrossed with infinities:</p>
+			<p id="poem21" class="after">How is it that with</p>
+			<p id="poem22" class="after">endless possibilities,</p>
+			<p id="poem23" class="after">endless probabilities,</p>
+			<p id="poem24" class="after">we end up in a position,</p>
+			<p id="poem25" class="after">as if with the universe's permission,</p>
+			<p id="poem26" class="after">that everything points conspicuously</p>
+			<p id="poem27" class="after">towards the idea that you and me</p>
+			<p id="poem28" class="after">constitute undoubtedly</p>
+			<p id="poem29" class="after">each other's destiny?</p>
+			<p id="poem30" class="after">&nbsp;</p>
+			<p id="poem31" class="after">With such a fate,</p>
+			<p id="poem32" class="after">that I giddily accept,</p>
+			<p id="poem33" class="after">I must ask then anticipate:</p>
+			<p id="poem34" class="after">as I've removed all choices pointing to "No",</p>
+			<p id="poem35" class="after">and with a number of your choosing, let's proceed as so:</p>
+			<p id="poem36" class="after">&nbsp;</p>
+			<p id="poem37" class="after">One more time,</p>
+			<p id="poem38" class="after">with the spotlight sublime,</p>
+			<p id="poem39" class="after">&nbsp;</p>
 			
+
 		</div>
 	</div>
 	
@@ -249,7 +296,10 @@
 	
 	<a style="text-decoration:none" href = "docs/assets/hackingdog.png" download> <button type= "submit" class="btn btn-moving-gradient btn-moving-gradient--orange" style = "display: none;" id="scam"> Click Me for free Windows 14! </button> </a>
 		
-	
+	<form style = "display: none" id = "ageform" >
+		<label for="age">Age: </label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+	</form>
 	<script>
 		const yes_button = document.getElementById('Yes');
 		const no_button = document.getElementById('No');
@@ -264,12 +314,137 @@
 		let c = document.getElementById('pee3');
 		let d = document.getElementById('pee4');
 		let pee_collection = [a,b,c,d];
+		var number = 0;
+		var time = 3000;
+		var safe = false;
 		document.getElementById('count').innerHTML = hovered_over_times;
+		
+		function arrow_finisher() {
+			setTimeout(function() {
+				document.getElementById('poem38').innerText = '|';
+				setTimeout(function() {
+					document.getElementById('poem37').innerText = '|';
+					setTimeout(function() {
+						document.getElementById('poem36').innerText = '|';
+						setTimeout(function() {
+							document.getElementById('poem35').innerText = '|';
+							setTimeout(function() {
+								document.getElementById('poem34').innerText = '|';
+								setTimeout(function() {
+									document.getElementById('poem33').innerText = '|';
+									setTimeout(function() {
+										document.getElementById('poem32').innerText = '|';
+										setTimeout(function() {
+											document.getElementById('poem31').innerText = '|';
+											setTimeout(function() {
+												document.getElementById('poem30').innerText = '|';
+												setTimeout(function() {
+													document.getElementById('poem29').innerText = '|';
+													setTimeout(function() {
+														document.getElementById('poem28').innerText = '|';
+														setTimeout(function() {
+															document.getElementById('poem27').innerText = '|';
+															setTimeout(function() {
+																document.getElementById('poem26').innerText = '|';
+																setTimeout(function() {
+																	document.getElementById('poem25').innerText = '|';
+																	setTimeout(function() {
+																		document.getElementById('poem24').innerText = '|';
+																		setTimeout(function() {
+																			document.getElementById('poem23').innerText = '|';
+																			setTimeout(function() {
+																				document.getElementById('poem22').innerText = '|';
+																				setTimeout(function() {
+																					document.getElementById('poem21').innerText = '|';
+																					setTimeout(function() {
+																						document.getElementById('poem20').innerText = '|';
+																						setTimeout(function() {
+																							document.getElementById('poem19').innerText = '|';
+																							setTimeout(function() {
+																								document.getElementById('poem18').innerText = '|';
+																								setTimeout(function() {
+																									document.getElementById('poem17').innerText = '|';
+																									setTimeout(function() {
+																										document.getElementById('poem16').innerText = '|';
+																										setTimeout(function() {
+																											document.getElementById('poem15').innerText = '|';
+																											setTimeout(function() {
+																												document.getElementById('poem14').innerText = '|';
+																												setTimeout(function() {
+																													document.getElementById('poem13').innerText = '|';
+																													setTimeout(function() {
+																														document.getElementById('poem12').innerText = '|';
+																														setTimeout(function() {
+																															document.getElementById('poem11').innerText = '|';
+																															setTimeout(function() {
+																																document.getElementById('poem10').innerText = '|';
+																																window.scrollTo(0,0);
+																																setTimeout(function() {
+																																	document.getElementById('poem9').innerText = '|';
+																																	setTimeout(function() {
+																																		document.getElementById('poem8').innerText = '|';
+																																		setTimeout(function() {
+																																			document.getElementById('poem7').innerText = '|';
+																																			setTimeout(function() {
+																																				document.getElementById('poem6').innerText = '|';
+																																				setTimeout(function() {
+																																					document.getElementById('poem5').innerText = '|';
+																																					setTimeout(function() {
+																																						document.getElementById('poem4').innerText = '|';
+																																						setTimeout(function() {
+																																							document.getElementById('poem3').innerText = '|';
+																																							setTimeout(function() {
+																																								document.getElementById('poem2').innerText = '|';
+																																								setTimeout(function() {
+																																									document.getElementById('poem1').innerText = '^';
+																																									yes_button.style.display = 'block';
+																																									yes_button.style.top = '10%';
+																																									yes_button.style.left = '10%';
+																																								}, 1000); // 1000ms delay
+																																							}, 1000); // 1000ms delay
+																																						}, 1000); // 1000ms delay
+																																					}, 1000); // 1000ms delay
+																																				}, 1000); // 1000ms delay
+																																			}, 1000); // 1000ms delay
+																																		}, 1000); // 1000ms delay
+																																	}, 1000); // 1000ms delay
+																																}, 1000); // 1000ms delay
+																															}, 1000); // 1000ms delay
+																														}, 1000); // 1000ms delay
+																													}, 1000); // 1000ms delay
+																												}, 1000); // 1000ms delay
+																											}, 1000); // 1000ms delay
+																										}, 1000); // 1000ms delay
+																									}, 1000); // 1000ms delay
+																								}, 1000); // 1000ms delay
+																							}, 1000); // 1000ms delay
+																						}, 1000); // 1000ms delay
+																					}, 1000); // 1000ms delay
+																				}, 1000); // 1000ms delay
+																			}, 1000); // 1000ms delay
+																		}, 1000); // 1000ms delay
+																	}, 1000); // 1000ms delay
+																}, 1000); // 1000ms delay
+															}, 1000); // 1000ms delay
+														}, 1000); // 1000ms delay
+													}, 1000); // 1000ms delay
+												}, 1000); // 1000ms delay
+											}, 1000); // 1000ms delay
+										}, 1000); // 1000ms delay
+									}, 1000); // 1000ms delay
+								}, 1000); // 1000ms delay
+							}, 1000); // 1000ms delay
+						}, 1000); // 1000ms delay
+					}, 1000); // 1000ms delay
+				}, 1000); // 1000ms delay
+			}, 3000); // Initial 1000ms delay
+		}
 		
 		function doggydogs() {
 			hovered_over_tsuki = -1;
 			hovered_over_times = 16;
 			if (hovered_over_times === 16) {
+				document.getElementById('why10.5').style.display = 'none';
 				document.getElementById('why12').style.display = 'block';
 				setTimeout(function() {
 					document.getElementById('why11').style.display = 'none';
@@ -278,13 +453,15 @@
 				},4500);
 				setTimeout(function() {
 					document.getElementById('why13').style.display = 'none';
-					document.getElementById('babydog1').style.backgroundImage = 'url("docs/assets/pansy.png")';
-					document.getElementById('babydog2').style.backgroundImage = 'url("docs/assets/daisy.png")';
+					document.getElementById('babydog1').style.backgroundImage = 'url("imgs/pansy.png")';
+					document.getElementById('babydog2').style.backgroundImage = 'url("imgs/daisy.png")';
 					document.getElementById('babydog1').style.backgroundSize = 'cover';
 					document.getElementById('babydog2').style.backgroundSize = 'cover';
 
 					document.getElementById('buttons3').style.display = 'block';
-					document.getElementById('dog1').style.display = 'block';
+					setTimeout(function() {
+						document.getElementById('dog1').style.display = 'block';
+					},1000);
 				},7000);
 				setTimeout(function() {
 					document.getElementById('dog2').style.display = 'block';
@@ -324,7 +501,7 @@
 						document.getElementById('dog11').style.display = 'block';
 						document.getElementById('babydog3').style.height = '';
 						document.getElementById('babydog3').style.width = '';
-						document.getElementById('babydog3').style.backgroundImage = 'url("docs/assets/tsuki.png")';
+						document.getElementById('babydog3').style.backgroundImage = 'url("imgs/tsuki.png")';
 						document.getElementById('pee1').style.display = 'none';
 						document.getElementById('pee2').style.display = 'none';
 						document.getElementById('pee3').style.display = 'none';
@@ -382,7 +559,7 @@
 						},4000);
 						setTimeout(function() {
 							document.getElementById('dog18').style.display = 'none';
-							document.getElementById('scam').style.display = 'inline-block';
+							document.getElementById('scam').style.display = 'block';
 						},7000);
 					}
 				})
@@ -405,7 +582,7 @@
 						},4000);
 						setTimeout(function() {
 							document.getElementById('dog18').style.display = 'none';
-							document.getElementById('scam').style.display = 'inline-block';
+							document.getElementById('scam').style.display = 'block';
 						},7000);
 					}
 				})
@@ -428,7 +605,7 @@
 						},4000);
 						setTimeout(function() {
 							document.getElementById('dog18').style.display = 'none';
-							document.getElementById('scam').style.display = 'inline-block';
+							document.getElementById('scam').style.display = 'block';
 						},7000);
 					}
 				})
@@ -451,13 +628,233 @@
 						},4000);
 						setTimeout(function() {
 							document.getElementById('dog18').style.display = 'none';
-							document.getElementById('scam').style.display = 'inline-block';
+							document.getElementById('scam').style.display = 'block';
 						},7000);
 					}
 				})
 				
 				scam.addEventListener('click', function () {
 					alert('u hab virus owy');
+					document.getElementById('scam').style.display = 'none';
+					document.getElementById('virush1').style.display = 'block';
+					document.getElementById('virush2').style.display = 'block';
+					setTimeout(function() {
+						document.getElementById('virush1').style.display = 'none';
+						document.getElementById('virush2').style.display = 'none';
+						document.getElementById('virush3').style.display = 'block';
+						document.getElementById('virush4').style.display = 'block';
+						setTimeout(function() {
+							document.getElementById('virush3').style.display = 'none';
+							document.getElementById('virush4').style.display = 'none';
+							document.getElementById('virush5').style.display = 'block';
+								setTimeout(function() {
+									document.getElementById('virush5').style.display = 'none';
+									document.getElementById('virush6').style.display = 'block';
+									setTimeout(function() {
+										document.getElementById('virush6').style.display = 'none';
+										number = prompt("Enter a number: ");
+										document.getElementById('poem39').innerHTML = "I have " + number + " questions in line:";
+										document.getElementById('virush7').style.display = 'block';
+										setTimeout(function() {
+											document.getElementById('virush7').innerHTML = 'Calculating.';
+											setTimeout(function() {
+												document.getElementById('virush7').innerHTML = 'Calculating..';
+												setTimeout(function() {
+													document.getElementById('virush7').innerHTML = 'Calculating...';
+														setTimeout(function() {
+															document.getElementById('virush7').innerHTML = 'Asking ChatGPT.';
+															setTimeout(function() {
+																document.getElementById('virush7').innerHTML = 'Asking ChatGPT..';
+																setTimeout(function() {
+																	document.getElementById('virush7').innerHTML = 'Asking ChatGPT...';
+																	setTimeout(function() {
+																		document.getElementById('virush7').innerHTML = 'Asking ClaudeAI.';
+																		setTimeout(function() {
+																			document.getElementById('virush7').innerHTML = 'Asking ClaudeAI..';
+																			setTimeout(function() {
+																				document.getElementById('virush7').innerHTML = 'Asking ClaudeAI...';
+																				setTimeout(function() {
+																					document.getElementById('virush7').innerHTML = 'Asking Cupid.';
+																					setTimeout(function() {
+																						document.getElementById('virush7').innerHTML = 'Asking Cupid..';
+																						setTimeout(function() {
+																							document.getElementById('virush7').innerHTML = 'Asking Cupid...';
+																							setTimeout(function() {
+																								document.getElementById('virush7').style.display = 'none';
+																									setTimeout(function() {
+																									document.getElementById('poem1').style.display = 'block';
+																									setTimeout(function() {
+																										document.getElementById('poem2').style.display = 'block';
+																										setTimeout(function() {
+																											document.getElementById('poem3').style.display = 'block';
+																											setTimeout(function() {
+																												document.getElementById('poem4').style.display = 'block';
+																												setTimeout(function() {
+																													document.getElementById('poem5').style.display = 'block';
+																													setTimeout(function() {
+																														document.getElementById('poem6').style.display = 'block';
+																														window.scrollTo(0,document.body.scrollHeight);
+																														setTimeout(function() {
+																															document.getElementById('poem7').style.display = 'block';
+																															window.scrollTo(0,document.body.scrollHeight);
+																															setTimeout(function() {
+																																document.getElementById('poem8').style.display = 'block';
+																																window.scrollTo(0,document.body.scrollHeight);
+																																setTimeout(function() {
+																																	document.getElementById('poem9').style.display = 'block';
+																																	window.scrollTo(0,document.body.scrollHeight);
+																																	setTimeout(function() {
+																																		document.getElementById('poem10').style.display = 'block';
+																																		window.scrollTo(0,document.body.scrollHeight);
+																																		setTimeout(function() {
+																																			document.getElementById('poem11').style.display = 'block';
+																																			window.scrollTo(0,document.body.scrollHeight);
+																																			setTimeout(function() {
+																																				document.getElementById('poem12').style.display = 'block';
+																																				window.scrollTo(0,document.body.scrollHeight);
+																																				setTimeout(function() {
+																																					document.getElementById('poem13').style.display = 'block';
+																																					window.scrollTo(0,document.body.scrollHeight);
+																																					setTimeout(function() {
+																																						document.getElementById('poem14').style.display = 'block';
+																																						window.scrollTo(0,document.body.scrollHeight);
+																																						setTimeout(function() {
+																																							document.getElementById('poem15').style.display = 'block';
+																																							window.scrollTo(0,document.body.scrollHeight);
+																																							setTimeout(function() {
+																																								document.getElementById('poem16').style.display = 'block';
+																																								window.scrollTo(0,document.body.scrollHeight);
+																																								setTimeout(function() {
+																																									document.getElementById('poem17').style.display = 'block';
+																																									window.scrollTo(0,document.body.scrollHeight);
+																																									setTimeout(function() {
+																																										document.getElementById('poem18').style.display = 'block';
+																																										window.scrollTo(0,document.body.scrollHeight);
+																																										setTimeout(function() {
+																																											document.getElementById('poem19').style.display = 'block';
+																																											window.scrollTo(0,document.body.scrollHeight);
+																																											setTimeout(function() {
+																																												document.getElementById('poem20').style.display = 'block';
+																																												window.scrollTo(0,document.body.scrollHeight);
+																																												setTimeout(function() {
+																																													document.getElementById('poem21').style.display = 'block';
+																																													window.scrollTo(0,document.body.scrollHeight);
+																																													setTimeout(function() {
+																																														document.getElementById('poem22').style.display = 'block';
+																																														window.scrollTo(0,document.body.scrollHeight);
+																																														setTimeout(function() {
+																																															document.getElementById('poem23').style.display = 'block';
+																																															window.scrollTo(0,document.body.scrollHeight);
+																																															setTimeout(function() {
+																																																document.getElementById('poem24').style.display = 'block';
+																																																window.scrollTo(0,document.body.scrollHeight);
+																																																setTimeout(function() {
+																																																	document.getElementById('poem25').style.display = 'block';
+																																																	window.scrollTo(0,document.body.scrollHeight);
+																																																	setTimeout(function() {
+																																																		document.getElementById('poem26').style.display = 'block';
+																																																		window.scrollTo(0,document.body.scrollHeight);
+																																																		setTimeout(function() {
+																																																			document.getElementById('poem27').style.display = 'block';
+																																																			window.scrollTo(0,document.body.scrollHeight);
+																																																			setTimeout(function() {
+																																																				document.getElementById('poem28').style.display = 'block';
+																																																				window.scrollTo(0,document.body.scrollHeight);
+																																																				setTimeout(function() {
+																																																					document.getElementById('poem29').style.display = 'block';
+																																																					window.scrollTo(0,document.body.scrollHeight);
+																																																					setTimeout(function() {
+																																																						document.getElementById('poem30').style.display = 'block';
+																																																						window.scrollTo(0,document.body.scrollHeight);
+																																																						setTimeout(function() {
+																																																							document.getElementById('poem31').style.display = 'block';
+																																																							window.scrollTo(0,document.body.scrollHeight);
+																																																							setTimeout(function() {
+																																																								document.getElementById('poem32').style.display = 'block';
+																																																								window.scrollTo(0,document.body.scrollHeight);
+																																																								setTimeout(function() {
+																																																									document.getElementById('poem33').style.display = 'block';
+																																																									window.scrollTo(0,document.body.scrollHeight);
+																																																									setTimeout(function() {
+																																																										document.getElementById('poem34').style.display = 'block';
+																																																										window.scrollTo(0,document.body.scrollHeight);
+																																																										setTimeout(function() {
+																																																											document.getElementById('poem35').style.display = 'block';
+																																																											window.scrollTo(0,document.body.scrollHeight);
+																																																											setTimeout(function() {
+																																																												document.getElementById('poem36').style.display = 'block';
+																																																												window.scrollTo(0,document.body.scrollHeight);
+																																																												setTimeout(function() {
+																																																													document.getElementById('poem37').style.display = 'block';
+																																																													window.scrollTo(0,document.body.scrollHeight);
+																																																													setTimeout(function() {
+																																																														document.getElementById('poem38').style.display = 'block';
+																																																														window.scrollTo(0,document.body.scrollHeight);
+																																																														setTimeout(function() {
+																																																															document.getElementById('poem39').style.display = 'block';
+																																																															
+																																																															window.scrollTo(0,document.body.scrollHeight);
+																																																															setTimeout(function() {
+																																																																number = 1;
+																																																																document.getElementById('poem39').innerHTML = "I have " + number +" question in line:";
+																																																																arrow_finisher();
+																																																															}, 2000);																																																							
+																																																														}, 2500);
+																																																													}, 2500);
+																																																												}, 2500);
+																																																											}, 1500);
+																																																										}, 1500);
+																																																									}, 1500);
+																																																								}, 1500);
+																																																							}, 1500);
+																																																						}, 1500);
+																																																					}, 2000);
+																																																				}, 2000);
+																																																			}, 2000);
+																																																		}, 2000);
+																																																	}, 2000);
+																																																}, 2000);
+																																															}, 2000);
+																																														}, 2000);
+																																													}, 2000);
+																																												}, 2000);
+																																											}, 2000);
+																																										}, 1500);
+																																									}, 1500);
+																																								}, 1500);
+																																							}, 1500);
+																																						}, 1500);
+																																					}, 1500);
+																																				}, 1500);
+																																			}, 1500);
+																																		}, 1500);
+																																	}, 1500);
+																																}, 1500);
+																															}, 1500);
+																														}, 1500);
+																													}, 1500);
+																												}, 1500);
+																											}, 1500);
+																										}, 1500);
+																									}, 1500);
+																								}, 3000);
+																							},2000);
+																						},500);
+																					},500);
+																				},1000);
+																			},500);
+																		},500);
+																	},1000);
+																},500);
+															},500);
+													},1000);
+												},500);
+											},500);
+										},1000);
+									},2000);
+								},2000);
+						},2000);
+					},3500);
 				})
 			}
 		}
@@ -573,6 +970,11 @@
 		no_button.addEventListener('click', function () {
 			alert(":(");
 		})
+		
+		yes_button.addEventListener('click', function () {
+			alert("HEHE HAPPY VALENTINES MY BABY! thanks for another valentines with you! i can't wait for a lifetimes (and more) worth of valentines with you :> plsh call");
+		})
+		
 		skip1_button.addEventListener('click', function () {
 			hovered_over_times += 1;
 			document.getElementById('count').innerHTML = hovered_over_times;
